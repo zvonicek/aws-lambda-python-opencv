@@ -19,6 +19,8 @@ cp -rf build/numpy/lib64/python2.7/site-packages/numpy lambda-package
 	cmake										\
 		-D CMAKE_BUILD_TYPE=RELEASE				\
 		-D WITH_TBB=ON							\
+		-D BUILD_SHARED_LIBS=NO                                         \
+		-D WITH_FFMPEG=ON                                               \
 		-D WITH_IPP=ON							\
 		-D WITH_V4L=ON							\
 		-D ENABLE_AVX=ON						\
